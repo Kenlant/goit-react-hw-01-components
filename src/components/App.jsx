@@ -1,16 +1,15 @@
-export const App = () => {
+import Profile from './Profile/Profile';
+
+export const App = ({ profileData }) => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <>
+      <Profile
+        username={profileData.username}
+        tag={profileData.tag}
+        location={profileData.location}
+        avatar={profileData.avatar}
+        stats={profileData.stats}
+      />
+    </>
   );
 };
