@@ -1,0 +1,27 @@
+.statistics {
+  margin: auto;
+  width: 400px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.statistics .title {
+  padding: 30px;
+  background-color: white;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.statistics .stat-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.statistics .item {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 4);
+  gap: 5px;
+  text-align: center;
+}
