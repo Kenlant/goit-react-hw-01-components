@@ -1,27 +1,22 @@
 [
   {
     "name": "Mango",
-    "avatar": "react-homework-template/friend-avatar.png",
     "isOnline": true
   },
   {
     "name": "Kiwi",
-    "avatar": "react-homework-template/friend-avatar.png",
     "isOnline": false
   },
   {
     "name": "Ajax",
-    "avatar": "react-homework-template/friend-avatar.png",
     "isOnline": true
   },
   {
     "name": "Jay",
-    "avatar": "react-homework-template/friend-avatar.png",
     "isOnline": true
   },
   {
     "name": "Polly",
-    "avatar": "react-homework-template/friend-avatar.png",
     "isOnline": false
   }
 ]

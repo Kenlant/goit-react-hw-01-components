@@ -1,8 +1,9 @@
 import Profile from './Profile/Profile';
 import Statistics from './Statistics/Statistics';
 import FriendList from './FriedList/FriendList';
+import TransactionHistory from './TransactionHistory/TransactionHistory';
 
-export const App = ({ profile, statistic, friends }) => {
+export const App = ({ profile, statistic, friends, transactions }) => {
   return (
     <>
       <Profile
@@ -14,6 +15,7 @@ export const App = ({ profile, statistic, friends }) => {
       />
       <Statistics title={statistic.title} stats={statistic.stats} />
       <FriendList friends={friends} />
+      <TransactionHistory transactions={transactions} />
     </>
   );
 };
