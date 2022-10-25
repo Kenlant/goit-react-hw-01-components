@@ -1,4 +1,5 @@
 import { getHexColor } from 'utils/colorUtils';
+import propTypes from './StatisticsPropTypes';
 import styles from './Statistics.module.css';
 
 export default function Statistics({ title, stats }) {
@@ -24,10 +25,12 @@ export default function Statistics({ title, stats }) {
             key={i}
           >
             <span className={labelClassName}>{item.label}</span>
-            <span className={percentageClassName}>{item.percentage}</span>
+            <span className={percentageClassName}>{item.percentage}%</span>
           </li>
         ))}
       </ul>
     </section>
   );
 }
+
+Statistics.propTypes = propTypes;

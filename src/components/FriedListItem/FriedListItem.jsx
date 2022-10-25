@@ -1,4 +1,5 @@
 import styles from './FriedListItem.module.css';
+import propTypes from './FriendListPropTypes';
 
 export default function FriendListItem({ name, avatar, isOnline }) {
   const {
@@ -22,3 +23,5 @@ export default function FriendListItem({ name, avatar, isOnline }) {
     </li>
   );
 }
+
+FriendListItem.propTypes = propTypes;

@@ -1,3 +1,4 @@
+import propTypes from './TransactionHistoryPropTypes';
 import styles from './TransactionHistory.module.css';
 
 export default function TransactionHistory({ transactions }) {
@@ -24,3 +25,5 @@ export default function TransactionHistory({ transactions }) {
     </table>
   );
 }
+
+TransactionHistory.propTypes = propTypes;

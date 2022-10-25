@@ -1,4 +1,5 @@
 import FriendListItem from 'components/FriedListItem/FriedListItem';
+import propTypes from './FriendListPropTypes';
 import styles from './FriendList.module.css';
 
 export default function FriendList({ friends }) {
@@ -17,3 +18,5 @@ export default function FriendList({ friends }) {
     </ul>
   );
 }
+
+FriendList.propTypes = propTypes;

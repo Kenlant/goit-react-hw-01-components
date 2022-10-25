@@ -1,4 +1,5 @@
 import styles from './Profile.module.css';
+import propTypes from './ProfilePropTypes';
 
 export default function Profile({ username, tag, location, avatar, stats }) {
   const {
@@ -15,8 +16,8 @@ export default function Profile({ username, tag, location, avatar, stats }) {
   } = styles;
   const statsDictionary = [
     { key: `Followers`, value: stats.followers },
-    { key: `Views`, value: stats.followers },
-    { key: `Likes`, value: stats.followers },
+    { key: `Views`, value: stats.views },
+    { key: `Likes`, value: stats.likes },
   ];
 
   return (
@@ -38,3 +39,5 @@ export default function Profile({ username, tag, location, avatar, stats }) {
     </div>
   );
 }
+
+Profile.propTypes = propTypes;
