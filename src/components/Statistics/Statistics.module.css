@@ -5,7 +5,7 @@
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
-.statistics .title {
+.title {
   padding: 30px;
   background-color: white;
   font-size: 30px;
@@ -13,12 +13,12 @@
   font-weight: 600;
 }
 
-.statistics .stat-list {
+.stat-list {
   display: flex;
   justify-content: space-between;
 }
 
-.statistics .item {
+.item {
   display: flex;
   flex-direction: column;
   padding: 20px;

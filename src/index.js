@@ -7,8 +7,8 @@ import statisticsData from './data/data.json';
 import friendsData from './data/friends.json';
 import transactionsData from './data/transactions.json';
 
-import userAvatar from './data/user-avatar.png';
-import friendAvatar from './data/friend-avatar.png';
+import userAvatar from './data/images/user-avatar.png';
+import friendAvatar from './data/images/friend-avatar.png';
 
 import './index.css';
 

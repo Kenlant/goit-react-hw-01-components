@@ -5,7 +5,7 @@
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
-.profile .description {
+.description {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,37 +14,37 @@
   background-color: white;
 }
 
-.profile .avatar {
+.avatar {
   width: 200px;
   height: 200px;
   border-radius: 50%;
 }
 
-.profile .name,
-.profile .tag,
-.profile .location {
+.name,
+.tag,
+.location {
   margin-bottom: 10px;
 }
 
-.profile .name {
+.name {
   font-size: 25px;
   font-weight: bold;
 }
 
-.profile .tag,
-.profile .location {
+.tag,
+.location {
   font-size: 15px;
   font-weight: lighter;
 }
 
-.profile .stats {
+.stats {
   display: flex;
   justify-content: space-between;
   background-color: #f3f6f9;
   border-top: 1px solid #e4e9f0;
 }
 
-.profile .stat-item {
+.stat-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,10 +55,10 @@
   padding: 30px;
 }
 
-.profile .stat-item:not(:last-child) {
+.stat-item:not(:last-child) {
   border-right: 1px solid #e4e9f0;
 }
 
-.profile .quantity {
+.quantity {
   font-weight: bold;
 }

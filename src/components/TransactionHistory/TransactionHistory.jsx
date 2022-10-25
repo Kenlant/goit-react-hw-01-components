@@ -1,8 +1,10 @@
-import './TransactionHistory.css';
+import styles from './TransactionHistory.module.css';
 
 export default function TransactionHistory({ transactions }) {
+  const { 'transaction-history': transactionHistoryClassName } = styles;
+
   return (
-    <table className="transaction-history">
+    <table className={transactionHistoryClassName}>
       <thead>
         <tr>
           <th>TYPE</th>

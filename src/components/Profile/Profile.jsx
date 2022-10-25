@@ -1,27 +1,39 @@
-import './Profile.css';
+import styles from './Profile.module.css';
 
 export default function Profile({ username, tag, location, avatar, stats }) {
+  const {
+    profile: profileClassName,
+    description: descriptionClassName,
+    avatar: avatarClassName,
+    name: nameClassName,
+    tag: tagClassName,
+    location: locationClassName,
+    stats: statsClassName,
+    'stat-item': statItemClassName,
+    label: labelClassName,
+    quantity: quantityClassName,
+  } = styles;
+  const statsDictionary = [
+    { key: `Followers`, value: stats.followers },
+    { key: `Views`, value: stats.followers },
+    { key: `Likes`, value: stats.followers },
+  ];
+
   return (
-    <div className="profile">
-      <div className="description">
-        <img className="avatar" src={avatar} alt="User avatar" />
-        <p className="name">{username}</p>
-        <p className="tag">@{tag}</p>
-        <p className="location">{location}</p>
+    <div className={profileClassName}>
+      <div className={descriptionClassName}>
+        <img className={avatarClassName} src={avatar} alt="User avatar" />
+        <p className={nameClassName}>{username}</p>
+        <p className={tagClassName}>@{tag}</p>
+        <p className={locationClassName}>{location}</p>
       </div>
-      <ul className="stats">
-        <li className="stat-item">
-          <span className="label">Followes</span>
-          <span className="quantity">{stats.followers}</span>
-        </li>
-        <li className="stat-item">
-          <span className="label">Views</span>
-          <span className="quantity">{stats.views}</span>
-        </li>
-        <li className="stat-item">
-          <span className="label">Likes</span>
-          <span className="quantity">{stats.followers}</span>
-        </li>
+      <ul className={statsClassName}>
+        {statsDictionary.map(x => (
+          <li className={statItemClassName} key={x.key}>
+            <span className={labelClassName}>{x.key}</span>
+            <span className={quantityClassName}>{x.value}</span>
+          </li>
+        ))}
       </ul>
     </div>
   );
