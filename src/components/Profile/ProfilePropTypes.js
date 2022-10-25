@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-export default {
+const propTypes = {
   username: PropTypes.string,
   tag: PropTypes.string,
   location: PropTypes.string,
@@ -11,3 +11,5 @@ export default {
     likes: PropTypes.number,
   }),
 };
+
+export default propTypes;

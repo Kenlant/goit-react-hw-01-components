@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
 
-export default {
+const propTypes = {
   baseUrl: PropTypes.string,
 };
+
+export default propTypes;

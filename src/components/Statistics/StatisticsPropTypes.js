@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-export default {
+const propTypes = {
   title: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.exact({
@@ -9,3 +9,5 @@ export default {
     })
   ),
 };
+
+export default propTypes;

@@ -1,7 +1,9 @@
 import PropTypes from 'prop-types';
 
-export default {
+const propTypes = {
   name: PropTypes.string,
   avatar: PropTypes.string,
   isOnline: PropTypes.bool,
 };
+
+export default propTypes;

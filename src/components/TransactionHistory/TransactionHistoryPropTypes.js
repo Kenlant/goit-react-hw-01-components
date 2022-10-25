@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-export default {
+const propTypes = {
   transactions: PropTypes.arrayOf(
     PropTypes.exact({
       id: PropTypes.number,
@@ -10,3 +10,5 @@ export default {
     })
   ),
 };
+
+export default propTypes;

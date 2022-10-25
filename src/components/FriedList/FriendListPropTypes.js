@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
 
-export default {
+const propTypes = {
   friends: PropTypes.array,
 };
+
+export default propTypes;
