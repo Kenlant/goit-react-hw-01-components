@@ -6,14 +6,14 @@ import FriendList from './FriedList/FriendList';
 import TransactionHistory from './TransactionHistory/TransactionHistory';
 
 export const App = ({ profile, statistic, friends, transactions }) => {
-  const baseURL = process.env.PUBLIC_URL;
+  const baseUrl = process.env.PUBLIC_URL;
 
   return (
-    <Router>
+    <Router basename={baseUrl}>
       <Routes>
-        <Route path={`${baseURL}`} element={<Navigation baseUrl={baseURL} />} />
+        <Route path="/" element={<Navigation />} />
         <Route
-          path={`${baseURL}/profile`}
+          path="/profile"
           element={
             <Profile
               username={profile.username}
@@ -25,17 +25,14 @@ export const App = ({ profile, statistic, friends, transactions }) => {
           }
         />
         <Route
-          path={`${baseURL}/statistics`}
+          path="/statistics"
           element={
             <Statistics title={statistic.title} stats={statistic.stats} />
           }
         />
+        <Route path="/friend-list" element={<FriendList friends={friends} />} />
         <Route
-          path={`${baseURL}/friend-list`}
-          element={<FriendList friends={friends} />}
-        />
-        <Route
-          path={`${baseURL}/transaction-history`}
+          path="/transaction-history"
           element={<TransactionHistory transactions={transactions} />}
         />
       </Routes>
